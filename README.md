@@ -1,6 +1,12 @@
-# my-project
+##### build the project
 
-echo "# my-project" >> README.md
+    ./gradlew build
 
-demo for Github Actions 
-see the youtube: https://www.youtube.com/watch?v=R8_veQiYBjI&list=PLy7NrYWoggjxKDRWLqkd4Kbt84XEerHhB&index=11
+##### build Docker image called java-app. Execute from root
+
+    docker build -t java-app .
+    
+##### push image to repo 
+
+    docker tag java-app demo-app:java-1.0
+    
